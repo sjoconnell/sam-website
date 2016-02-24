@@ -1,0 +1,126 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #061233;
+    font-family: 'Open Sans';
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*PROFILE*/
+
+.profile {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.profile h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    color: white;
+    font-size: 20px;
+}
+
+/*PROJECTS*/
+
+.projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projects h2 {
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.swiper-container {
+    width: 400px;
+    min-height: 150px;
+}    
+
+.next-button, .prev-button {
+    color: white;
+    position: absolute;
+    top: 60%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+
+}
+
+.prev-button {
+    left: 10px;
+    right: auto;
+}
+
+.next-button {
+    right: 10px;
+    left: auto;
+}
+
+.slide-content {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.slide-content a {
+    text-decoration: none;
+    color: #D19019;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.slide-content a:hover {
+    border-bottom: 2px solid #D19019;
+}
+
+.slide-content p {
+    color: white;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.slide-content h3 {
+    margin-top: 20px;
+}
+
+/*SOCIAL*/
+
+.social {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.social li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.social li a:hover {
+    border-bottom: 1px solid white;
+}
