@@ -4,85 +4,43 @@
     <title>Sam O'Connell</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-
 </head>
 
 <body>
-    <div class="shell animated zoomIn">
-        <header>
-            <div class="profile">
-                <h1>Sam O'Connell</h1>
-                <h3>Full Stack Web Developer</h3>
-            <div>
-        </header>
+    <div class="shell">
+        <canvas class="draw"></canvas>
+        <div class="information animated zoomIn">
+            <header>
+                <div class="profile">
+                    <h1>Sam O'Connell</h1>
+                    <h3>Full Stack Web Developer</h3>
+                <div>
+            </header>
 
-        <div class="projects">
-            <h2>Projects</h2>
-
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <h3><a href="http://sjoconnell.accomplus.map.cliquedomains.com" target="_blank">Accomplus</a></h3>
-                            <p>A Wordpress site that is a replica of a Clique Studios client project.  Built with Sage, HTML, CSS and Javascript.</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <h3><a href="http://twitter-sam.map.cliquedomains.com" target="_blank">Twit</a></h3>
-                            <p>A compact Twitter application built with Laravel, HTML, CSS and Javascript that integrates with Twitter's API.</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-content">
-                            <h3><a href="http://businessname.map.cliquedomains.com" target="_blank">Business Name</a></h3>
-                            <p>A standard PSD to HTML webpage.  Built with HTML, CSS, and Javascript.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- If we need pagination -->
-<!--                 <div class="swiper-pagination"></div> -->
-                
-
-                <i class="fa fa-chevron-left prev-button"></i>
-                <i class="fa fa-chevron-right next-button"></i>
-                
+            <div class="tech">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>ES6</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                </ul>
             </div>
-        </div>
 
-        <div class="social">
-            <ul>
-                <li><a href="https://github.com/sjoconnell" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/sjoconnell" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:sjo773@gmail.com" target="_blank">Email</a></li>
-            </ul>
+            <div class="social">
+                <ul>
+                    <li><a href="https://github.com/sjoconnell" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/sjoconnell" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:sjo773@gmail.com" target="_blank">Email </a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
-
-<script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'horizontal',
-    loop: true,
-    
-    // If we need pagination
-    // pagination: '.swiper-pagination',
-    
-    // Navigation arrows
-    nextButton: '.next-button',
-    prevButton: '.prev-button',
-    autoplay: 4000,
-    autoplayDisableOnInteraction: false,
-    
-  })        
-</script> 
+<script type="text/javascript" src="js/index.js"></script>
 
 </body>
 
