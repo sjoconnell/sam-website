@@ -1,9 +1,8 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
-
-gulp.task('hello', function() {
-  console.log('Hello Sam')
-})
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel')
+const pump = require('pump')
 
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -11,6 +10,19 @@ gulp.task('browserSync', function() {
       baseDir: 'app'
     }
   })
+})
+
+gulp.task('minifyjs', function(cb) {
+  pump([
+      gulp.src('app/js/**/*.js'),
+      babel({
+        presets: ['es2015']
+      }),
+      uglify(),
+      gulp.dest('dist/js')
+    ],
+    cb
+  )
 })
 
 gulp.task('watch', ['browserSync'], function() {
