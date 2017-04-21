@@ -50,7 +50,6 @@ canvas.addEventListener('mouseleave', () => isDrawing = false)
 window.addEventListener('resize', function() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
-    ctx.strokeStyle = "orange"
     ctx.lineJoin = "round"
     ctx.lineCap = "round"
     ctx.lineWidth = 50
