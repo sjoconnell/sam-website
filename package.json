@@ -1,0 +1,23 @@
+{
+  "name": "sam-website",
+  "version": "1.0.0",
+  "description": "Sam O'Connell personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjoconnell/sam-website.git"
+  },
+  "author": "Sam O'Connell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjoconnell/sam-website/issues"
+  },
+  "homepage": "https://github.com/sjoconnell/sam-website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  }
+}
