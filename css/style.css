@@ -10,17 +10,36 @@ body {
     font-family: 'Open Sans';
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+.shell {
+    width: 100%;
+    height: 100%;
 }
+
+.draw {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.information {
+    border: 3px solid #D19019;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 100px auto 0px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background-color: #061233;
+}
+
 
 /*PROFILE*/
 
 .profile {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .profile h1 {
@@ -35,78 +54,26 @@ body {
     font-size: 20px;
 }
 
-/*PROJECTS*/
+/*TECH*/
 
-.projects {
+.tech {
     text-align: center;
     margin-top: 50px;
 }
 
-.projects h2 {
-    color: white;
-    font-size: 26px;
-    font-weight: 600;
-}
-
-.swiper-container {
-    width: 400px;
-    min-height: 150px;
-}    
-
-.next-button, .prev-button {
-    color: white;
-    position: absolute;
-    top: 60%;
-    width: 27px;
-    height: 44px;
-    margin-top: -22px;
-    z-index: 10;
-    cursor: pointer;
-
-}
-
-.prev-button {
-    left: 10px;
-    right: auto;
-}
-
-.next-button {
-    right: 10px;
-    left: auto;
-}
-
-.slide-content {
-    width: 300px;
-    display: block;
-    margin: auto;
-}
-
-.slide-content a {
-    text-decoration: none;
+.tech li {
     color: #D19019;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 20px;
-}
-
-.slide-content a:hover {
-    border-bottom: 2px solid #D19019;
-}
-
-.slide-content p {
-    color: white;
-    margin-top: 15px;
-    line-height: 20px;
-}
-
-.slide-content h3 {
-    margin-top: 20px;
 }
 
 /*SOCIAL*/
 
 .social {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .social li {
