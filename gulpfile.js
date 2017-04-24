@@ -7,7 +7,7 @@ const pump = require('pump')
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: './'
     }
   })
 })
@@ -27,7 +27,7 @@ gulp.task('minifyjs', function(cb) {
 
 gulp.task('watch', ['browserSync'], function() {
   gulp.watch('app/css/**/*.css', browserSync.reload)
-  gulp.watch('app/*.html', browserSync.reload)
+  gulp.watch('./*.html', browserSync.reload)
   gulp.watch('app/js/**/*.js', browserSync.reload)
   // other watchers
 })
