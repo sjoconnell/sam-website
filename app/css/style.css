@@ -145,3 +145,10 @@ body {
 .social li a:hover {
     border-bottom: 1px solid white;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 370px) {
+  .social li {
+    margin: 0 20px;
+}
+}
