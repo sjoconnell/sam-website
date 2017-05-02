@@ -86,13 +86,15 @@ body {
     left: 0;
     right: 0;
     background-color: #061233;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-
 
 /*PROFILE*/
 
 .profile {
-    text-align: center;
     padding-top: 30px;
 }
 
@@ -111,8 +113,11 @@ body {
 /*TECH*/
 
 .tech {
-    text-align: center;
     margin-top: 30px;
+}
+
+.tech li:first-child {
+  margin-top: 0;
 }
 
 .tech li {
@@ -125,7 +130,6 @@ body {
 /*SOCIAL*/
 
 .social {
-    text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -150,5 +154,11 @@ body {
 @media (max-width: 370px) {
   .social li {
     margin: 0 20px;
+  }
+
+  .information {
+    margin: 50px auto 0px;
+  }
 }
-}
+
+
